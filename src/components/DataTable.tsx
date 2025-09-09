@@ -3,7 +3,7 @@ import { SlPencil } from 'react-icons/sl';
 import { flexRender, type Table } from "@tanstack/react-table";
 import { Link } from 'react-router-dom';
 
-import '../styles/components/Table.scss';
+import '../styles/components/DataTable.scss';
 import type { Announcement } from '../@types';
 
 export default function DataTable(props: { table: Table<Announcement> }) {

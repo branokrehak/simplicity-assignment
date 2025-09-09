@@ -110,14 +110,18 @@ export default function AnnouncementEditForm(props: { announcement?: Announcemen
         <h4>Category</h4>
         <MultiSelect
           label="Select category so readers know what your announcement is about."
-          placeholder="Select categories"
           classNames={{
             label: 'input-label',
-            dropdown: 'select-dropdown',
           }}
           data={categories}
           key={form.key('categories')}
           {...form.getInputProps('categories')}
+          styles={{
+            dropdown: {
+              boxShadow: '0 4px 12px rgba(0, 0, 0, 0.2)',
+              border: 'none',
+            },
+          }}
         />
 
         <h4>Publication date</h4>

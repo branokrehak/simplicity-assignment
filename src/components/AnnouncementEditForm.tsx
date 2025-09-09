@@ -56,7 +56,7 @@ export default function AnnouncementEditForm(props: { announcement?: Announcemen
       title: values.title,
       content: values.content,
       categories: values.categories,
-      publicationDate: values.publicationDate,
+      publicationDate: dayjs(values.publicationDate).format('MMM DD, YYYY HH:mm'),
       lastUpdate: new Date().toLocaleDateString('en-US', {
         month: 'short', 
         day: 'numeric', 
@@ -123,7 +123,6 @@ export default function AnnouncementEditForm(props: { announcement?: Announcemen
         <h4>Publication date</h4>
         <DateTimePicker
           placeholder="Select date and time"
-          valueFormat="MM/DD/YYYY HH:mm"
           key={form.key('publicationDate')}
           {...form.getInputProps('publicationDate')}
         />

@@ -21,7 +21,7 @@ export default function Announcements() {
     <section className="announcements">
       <div className="line" />
       <div className="content-wrapper">
-        <h1>Announcements</h1>
+        <h2>Announcements</h2>
         <DataTable table={table} />
       </div>
     </section>

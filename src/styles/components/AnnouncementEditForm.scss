@@ -1,0 +1,36 @@
+.announcement-edit-form {
+  margin-left: 300px;
+  margin-top: 60px;
+  width: 600px;
+
+  .input-label {
+    opacity: .6;
+  }
+  .input-wrapper {
+    margin-bottom: 10px;
+  }
+  .select-dropdown {
+    border: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15),;
+    border-radius: 8px;
+  }
+  h4 {
+    margin: 25px 0 5px;
+  }
+  .submit-btn {
+    cursor: pointer;
+    display: flex;
+    margin-left: auto;
+    border: none;
+    background-color: rgb(255, 177, 32);
+    padding: 6px 16px;
+    border-radius: 100px;
+    font-weight: 600;
+    margin-top: 30px;
+    transition: ease-in-out 0.2s;
+
+    &:hover {
+      background-color: rgb(255, 199, 94);
+    }
+  }
+}

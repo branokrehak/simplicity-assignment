@@ -1,14 +1,14 @@
 import React from 'react';
 import { LuMegaphone } from 'react-icons/lu';
 
-import '../../styles/components/layout/sidebar.scss';
+import '../../styles/components/layout/Sidebar.scss';
 import { NavLink } from 'react-router-dom';
 
 export default function Sidebar() {
     return <>
         <aside className="sidebar">
             <NavLink to="/" className="logo">
-                <img src="logo.png" alt="" />
+                <img src="/logo.png" alt="logo" />
                 <h3>Test city</h3>
             </NavLink>
 

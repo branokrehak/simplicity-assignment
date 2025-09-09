@@ -1,10 +1,12 @@
 import React from 'react';
 import { SlPencil } from 'react-icons/sl';
-import { flexRender, type Table, type SortingState, getCoreRowModel, getSortedRowModel } from "@tanstack/react-table";
+import { flexRender, type Table } from "@tanstack/react-table";
+import { Link } from 'react-router-dom';
 
-import '../styles/components/table.scss';
+import '../styles/components/Table.scss';
+import type { AnnouncementRow } from '../@types';
 
-export default function DataTable(props: { table: Table<any> }) {
+export default function DataTable(props: { table: Table<AnnouncementRow> }) {
   return <>
     <div className="data-table">
       <table className="table--main">
@@ -38,7 +40,9 @@ export default function DataTable(props: { table: Table<any> }) {
                 </td>
               ))}
               <td className="table--data table--data--icon">
-                <SlPencil size={16} />
+                <Link to={`/announcements/${row.original.id}`} title="Edit">
+                  <SlPencil size={16} />
+                </Link>
               </td>
             </tr>
           ))}

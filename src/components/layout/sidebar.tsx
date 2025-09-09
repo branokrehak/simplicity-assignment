@@ -15,7 +15,7 @@ export default function Sidebar() {
             <ul>
                 <li>
                     <NavLink to="/announcements" className={({ isActive }) => `link ${isActive ? 'link--active' : ''}`}>
-                        <LuMegaphone /> Announcements
+                        <LuMegaphone size={22} /> Announcements
                     </NavLink>
                 </li>
             </ul>

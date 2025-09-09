@@ -1,0 +1,31 @@
+.data-table {
+  .table--main {
+    table-layout: fixed;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  .table--head {
+    :first-child {
+      border-top: 1px solid rgba($color: #000000, $alpha: .15);
+    }
+  }
+  .table--row {
+    padding: 0 16px 0 40px;
+    border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
+  }
+  .table--header {
+    text-align: left;
+  }
+  .table--data, .table--header {
+    padding: 16px 16px 16px 60px;
+  }
+  .table--data--icon {
+    text-align: right;
+    vertical-align: middle; 
+    
+    svg {
+      display: block;     
+      margin-left: auto; 
+    }
+  }
+}

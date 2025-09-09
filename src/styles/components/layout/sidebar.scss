@@ -4,8 +4,9 @@
   left: 0;
   width: 300px;
   height: 100vh;
-  background-color: #e5e5e5;
+  background-color: #ededed;
   display: flex;
+  flex-shrink: 0;
   flex-direction: column;
   padding: 8px;
   gap: 10px;
@@ -42,11 +43,6 @@
       border-radius: 6px;
       background-color: #d2d2d2;
       transition: ease-in-out 0.1s;
-  
-      svg {
-        height: 22px;
-        width: 22px;
-      }
   
       &--active, &:hover {
         background-color: rgb(253, 253, 199);

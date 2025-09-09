@@ -4,9 +4,9 @@ import { flexRender, type Table } from "@tanstack/react-table";
 import { Link } from 'react-router-dom';
 
 import '../styles/components/Table.scss';
-import type { AnnouncementRow } from '../@types';
+import type { Announcement } from '../@types';
 
-export default function DataTable(props: { table: Table<AnnouncementRow> }) {
+export default function DataTable(props: { table: Table<Announcement> }) {
   return <>
     <div className="data-table">
       <table className="table--main">

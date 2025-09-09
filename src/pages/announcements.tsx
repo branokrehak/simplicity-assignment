@@ -6,7 +6,9 @@ import DataTable from '../components/DataTable';
 import { data, columns } from '../data/announcements';
 
 export default function Announcements() {
-  const [sorting, setSorting] = useState<SortingState>([]);
+  const [sorting, setSorting] = useState<SortingState>([
+    { id: 'lastUpdate', desc: true },
+  ]);
 
   const table = useReactTable({
     data,

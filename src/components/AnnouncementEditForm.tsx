@@ -57,7 +57,11 @@ export default function AnnouncementEditForm(props: { announcement?: Announcemen
       content: values.content,
       categories: values.categories,
       publicationDate: values.publicationDate,
-      lastUpdate: new Date().toLocaleDateString('en-GB'),
+      lastUpdate: new Date().toLocaleDateString('en-US', {
+        month: 'short', 
+        day: 'numeric', 
+        year: 'numeric' 
+      }),
     };
 
     setAnnouncement(updatedAnnouncement);

@@ -14,7 +14,14 @@
     border-bottom: 1px solid rgba($color: #000000, $alpha: .15);
   }
   .table--header {
+    cursor: pointer;
     text-align: left;
+    transition: ease-in-out .2s;
+    background-color: transparent;
+
+    &:hover {
+      background-color: rgba($color: #d1d1d1, $alpha: .1);
+    }
   }
   .table--data, .table--header {
     padding: 16px 16px 16px 60px;

@@ -1,6 +1,6 @@
 import React from 'react';
-import { flexRender, type Table } from '@tanstack/react-table';
 import { SlPencil } from 'react-icons/sl';
+import { flexRender, type Table, type SortingState, getCoreRowModel, getSortedRowModel } from "@tanstack/react-table";
 
 import '../styles/components/table.scss';
 
@@ -12,7 +12,11 @@ export default function DataTable(props: { table: Table<any> }) {
           {props.table.getHeaderGroups().map((headerGroup) => (
             <tr className="table--row" key={headerGroup.id}>
               {headerGroup.headers.map((header) => (
-                <th className="table--header" key={header.id}>
+                <th 
+                  className="table--header" 
+                  key={header.id} 
+                  onClick={header.column.getToggleSortingHandler()}
+                >
                   {header.isPlaceholder
                     ? null
                     : flexRender(

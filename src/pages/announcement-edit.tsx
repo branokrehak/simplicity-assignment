@@ -18,7 +18,7 @@ export default function AnnouncementEdit() {
   }, [id])
   
   return <>
-    <section className="announcements">
+    <section className="announcement-edit">
       <div className="line" />
       {announcement && <AnnouncementEditForm announcement={announcement} />}
     </section>
